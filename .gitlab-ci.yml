@@ -1,0 +1,20 @@
+# 用 docker 部署
+
+stages:
+  - deploy
+
+cache: 
+  key: vite
+  paths: 
+    - node_modules
+
+job_deploy:
+  stage: deploy
+  image: docker
+  tags:
+    - vitepro
+  script: 
+    - echo 'cicd --deploy'
+    - docker build -t myvite .
+    - if [ $(docker ps -aq --filter name=test-container) ]; then docker rm -f test-container;fi
+    - docker run -d -p 7000:80 --name test-container myvite

@@ -1,0 +1,247 @@
+@import './variable.scss';
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  animation-name: fadeOutRight;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  animation-name: fadeOutDown;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutLeftBig {
+  animation-name: fadeOutLeftBig;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutLeftBig {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+.fadeOutRightBig {
+  animation-name: fadeOutRightBig;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutRightBig {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+.fadeOutUpBig {
+  animation-name: fadeOutUpBig;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.fadeOutDownBig {
+  animation-name: fadeOutDownBig;
+  animation-duration: $animate-time;
+}
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+.rotateOut {
+  animation-name: rotateOut;
+  animation-duration: $animate-time;
+}
+
+@keyframes rotateOut {
+  from {
+    opacity: 1;
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform-origin: cneter;
+    transform: rotate(-200deg);
+  }
+}
+
+.rotateOutDownLeft {
+  animation-name: rotateOutDownLeft;
+  animation-duration: $animate-time;
+}
+
+@keyframes rotateOutDownLeft {
+  from {
+    opacity: 1;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+  }
+}
+
+.rotateOutDownRight {
+  animation-name: rotateOutDownRight;
+  animation-duration: $animate-time;
+}
+
+@keyframes rotateOutDownRight {
+  from {
+    opacity: 1;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform-origin: right bottom;
+    transform: rotate(45deg);
+  }
+}
+
+.rotateOutUpLeft {
+  animation-name: rotateOutUpLeft;
+  animation-duration: $animate-time;
+}
+
+@keyframes rotateOutUpLeft {
+  from {
+    opacity: 1;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+  }
+}
+
+.rotateOutUpRight {
+  animation-name: rotateOutUpRight;
+  animation-duration: $animate-time;
+}
+
+@keyframes rotateOutUpRight {
+  from {
+    opacity: 1;
+    transform-origin: right bottom;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform-origin: right bottom;
+    transform: rotate(-45deg);
+  }
+}

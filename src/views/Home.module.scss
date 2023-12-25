@@ -1,0 +1,52 @@
+.editor {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    &-left,
+    &-right {
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        width: 270px;
+        border: solid 1px black;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    &-left {
+        left: 10px;
+    }
+
+    &-right {
+        right: 10px;
+
+    }
+
+    &-top {
+        position: absolute;
+        right: 290px;
+        left: 290px;
+        top: 10px;
+        height: 80px;
+        border: solid 1px black;
+    }
+
+    &-container {
+        position: absolute;
+        top: 90px;
+        right: 280px;
+        left: 280px;
+        bottom: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        &-canvas {
+            overflow: auto;
+            height: 100%;
+            width: 100%;
+            &-content {
+                border: solid 1px black;
+                margin: auto;
+            }
+        }
+    }
+}
